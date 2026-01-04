@@ -1,24 +1,40 @@
-**Server Application (Admin)**
-Used by staff to:
+# System Architecture
 
-•	Manage computers
-•	Create and control sessions
-•	Monitor usage in real time
-•	Generate secure PINs
-•	View session history and reports
+The system follows a **Server–Client architecture** with a shared data layer.
 
-**Client Application (PC Lock App)**
-Installed on each computer to:
+## Components
 
-•	Enforce session rules
-•	Lock/unlock automatically
-•	Display remaining time
-•	Report online/offline status securely
+### Admin Server (WPF)
+- Session creation and management
+- Computer monitoring
+- Reporting and analytics
+- Configuration and customization
 
- **Shared Data Layer**
- 
-•	Centralized SQL Server database
-•	Secure authentication
-•	Shared models and configurations
+### Client Application (WPF)
+- Full-screen lock enforcement
+- PIN-based session login
+- Countdown and reminders
+- Online/offline heartbeat reporting
+
+### Shared Data Layer
+- SQL Server backend
+- Entity Framework Core ORM
+- Secure admin authentication
+- Centralized configuration
 
 
+## Communication Flow
+
+1. Admin creates a session
+2. System generates a PIN
+3. Client validates PIN
+4. Session timer begins
+5. Client sends heartbeat
+6. Session expires → client locks
+
+## Design Goals
+
+- Security
+- Reliability
+- Scalability
+- Low administrative overhead
