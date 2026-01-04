@@ -62,6 +62,15 @@ This repository contains:
 - Demonstration client code
 - Deployment guidelines
 
+## Technologies Used
+
+Language: C#
+Framework: .NET (WPF)
+Database: SQL Server / SQL Express
+ORM: Entity Framework Core
+UI: XAML (WPF)
+Architecture: Server–Client with Shared Data Layer
+
 Production installers are available upon request for evaluation and pilot
 programs.
 
