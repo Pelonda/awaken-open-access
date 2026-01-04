@@ -1,18 +1,11 @@
-## Impact Statement
-Access to secure computing infrastructure is essential for education, workforce development, and community services.
-Many public institutions face challenges such as:
+# Impact Statement
 
-- Uncontrolled computer usage
-- Security risks on shared machines
-- Limited staff resources
-- Unequal access to technology
+Access to secure digital infrastructure is a critical component of modern education and workforce development.
 
-Awaken Open Access contributes to the national interest by enabling secure,
-equitable access to digital resources in educational and public environments.
+This project contributes to the national interest by:
+- Improving equitable access to technology
+- Enhancing security in public computing environments
+- Reducing operational costs for public institutions
+- Supporting scalable adoption across the United States
 
-The system reduces operational costs for public institutions, improves digital
-safety, and supports nationwide deployment without geographic limitations.
-
-By offering the solution free of charge, the project directly benefits
-underserved communities and aligns with U.S. educational and workforce
-development priorities.
+By offering this solution free of charge to educational and public organizations, the project directly benefits underserved communities and aligns with national educational priorities.
