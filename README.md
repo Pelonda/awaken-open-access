@@ -1,4 +1,4 @@
-# Awaken Open Access – Secure Shared Computer Management System
+# GEC Open Access – Secure Shared Computer Management System
 
 ## Project Lead
 **Popol Y. Elonda**
@@ -7,7 +7,7 @@ Applied Science in Applied Technology | BYU-Idaho | BYU-Pathway Worldwide
 United States
 
 ## Overview
-Awaken Open Access is a secure computer time-management system designed for
+GEC Open Access is a secure computer time-management system designed for
 schools, libraries, and community learning centers.
 
 The system enables institutions to provide controlled, equitable access to
@@ -22,7 +22,7 @@ institutions.
 Access to secure digital infrastructure is essential for education, workforce
 development, and community services.
 
-Awaken Open Access addresses critical challenges:
+GEC Open Access addresses critical challenges:
 - Preventing misuse of shared computers
 - Enforcing fair access policies
 - Protecting user privacy
@@ -68,7 +68,7 @@ programs.
 
 ## Contact
 **Popol Y. Elonda**  
-Email: popolelonda@gmail.com or pelonda@byupathwa.edu  
+Email: popolelonda@gmail.com or pelonda@byupathway.edu  
 GitHub: https://github.com/pelonda
 
 
