@@ -1,4 +1,11 @@
 ## Impact Statement
+Access to secure computing infrastructure is essential for education, workforce development, and community services.
+Many public institutions face challenges such as:
+
+- Uncontrolled computer usage
+- Security risks on shared machines
+- Limited staff resources
+- Unequal access to technology
 
 Awaken Open Access contributes to the national interest by enabling secure,
 equitable access to digital resources in educational and public environments.
