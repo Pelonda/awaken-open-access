@@ -1,3 +1,12 @@
-Global Education Center (GEC) is a secure, desktop-based PC time management system designed for schools, libraries, and community learning centers that provide shared computer access.
-The system enables administrators to manage computer usage securely using PIN-based sessions, while client computers are automatically locked and unlocked based on time rules and security policies.
-This solution is provided free of charge for educational and public institutions and is intended to support equitable access to digital resources.
+# Project Overview
+
+GEC is a secure PC time management system designed for environments where shared computer access must be controlled, fair, and secure.
+
+The project focuses on:
+- Educational institutions
+- Libraries
+- Community learning centers
+- Workforce training facilities
+
+The system provides administrators with full control over computer usage while ensuring a simple, user-friendly experience for clients.
+This repository represents the foundational implementation that will evolve into the **Awaken Platform**, a scalable, cloud-ready solution.
