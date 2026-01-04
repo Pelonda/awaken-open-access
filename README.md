@@ -74,6 +74,17 @@ Architecture: Server–Client with Shared Data Layer
 Production installers are available upon request for evaluation and pilot
 programs.
 
+## Future Evolution – Awaken Platform
+
+This project serves as the technical foundation for a future cloud-based platform named Awaken, which will expand capabilities to:
+- Web-based administration
+- Cloud deployment
+- Multi-site and multi-tenant support
+- Online reservations (e.g., Skedda integration)
+- Automatic PIN generation from web bookings
+- Secure API integration
+- National-scale adoption
+
 
 ## Contact
 **Popol Y. Elonda**  
