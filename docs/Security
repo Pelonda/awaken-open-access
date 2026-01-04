@@ -1,0 +1,44 @@
+# Security Policy
+
+## Supported Versions
+
+This project is provided as an open-access educational solution.
+The following components are supported:
+
+| Component        | Support Level |
+|------------------|---------------|
+| Admin Server     | Supported     |
+| Client Demo App  | Supported     |
+| Production MSI   | On Request    |
+
+Security updates and fixes are applied to the actively maintained versions.
+
+## Reporting a Vulnerability
+
+If you discover a security vulnerability, please report it responsibly.
+
+**Contact:**
+Popol Y. Elonda  
+Email: Popolelonda@gmail.com or pelonda@byupathway.edu
+
+Please include:
+- A description of the issue
+- Steps to reproduce (if applicable)
+- Impact assessment (if known)
+
+Do **not** publicly disclose vulnerabilities before they are reviewed.
+
+
+## Security Principles
+
+This project follows these principles:
+- Least privilege access
+- Secure password hashing
+- No plaintext credential storage
+- Controlled administrative access
+- Local-first execution for client security
+
+## Disclaimer
+
+This software is provided for educational and public-interest use.
+Institutions deploying this solution are responsible for their own security audits and operational compliance.
