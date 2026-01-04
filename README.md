@@ -2,7 +2,7 @@
 
 ## Project Lead
 **Popol Y. Elonda**
-+13854914089
+
 Applied Science in Applied Technology | BYU-Idaho | BYU-Pathway Worldwide  
 United States
 
