@@ -1,0 +1,41 @@
+# Contributing Guidelines
+
+Thank you for your interest in contributing to this project.
+
+This repository is maintained as an open-access educational initiative and welcomes responsible contributions.
+
+## How to Contribute
+
+You may contribute by:
+- Improving documentation
+- Reporting bugs
+- Suggesting enhancements
+- Proposing accessibility improvements
+
+
+## Contribution Rules
+
+1. Fork the repository
+2. Create a feature branch (`feature/your-feature-name`)
+3. Commit changes with clear messages
+4. Submit a Pull Request with explanation
+
+## Code Standards
+
+- Language: C#
+- Framework: .NET
+- UI: WPF (XAML)
+- Database: SQL Server
+- Follow clean architecture principles
+- No hardcoded credentials or secrets
+
+## Licensing
+
+By contributing, you agree that your contributions will be licensed under the same MIT License as the project.
+
+
+## Contact
+
+For collaboration, research use:
+Popol Y. Elonda  
+Email: popolelonda@gmail.com or pelonda@byupathway.edu
