@@ -1,0 +1,14 @@
+# GEC.Client (Computer Lock Application)
+
+This application is installed on every client computer (lab PC).
+
+## Main Responsibilities
+- Display lock screen until a valid session PIN is entered
+- Unlock the PC only for the session duration
+- Show session timer (Session Bar)
+- Send heartbeat signals to the server database (online detection)
+- Automatically lock the screen when time expires
+
+## Security Note
+Client computers should not expose admin functions to end-users.
+Admin exit is protected using an admin hotkey and credential check.
