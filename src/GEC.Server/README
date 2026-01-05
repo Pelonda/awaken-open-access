@@ -1,0 +1,14 @@
+# GEC.Server (Admin Dashboard)
+
+This is the administrator application used by staff to manage computers and sessions.
+
+## Main Responsibilities
+- View all computers and their status (Idle / In Use / Offline)
+- Create and manage timed sessions
+- Generate PIN codes for users
+- Force-end sessions remotely
+- Manage welcome message and multilingual content
+
+## Notes
+- Requires access to the central SQL Server database.
+- Intended for staff/admin usage only.
