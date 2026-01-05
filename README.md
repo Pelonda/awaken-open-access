@@ -18,7 +18,7 @@ This project is offered **free of charge** for educational and public
 institutions.
 
 
-## National Importance
+## Importance
 Access to secure digital infrastructure is essential for education, workforce
 development, and community services.
 
