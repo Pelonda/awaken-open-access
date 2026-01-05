@@ -1,0 +1,16 @@
+# GEC.Shared (Shared Core Library)
+
+This project contains the shared data layer used by both **GEC.Server** and **GEC.Client**.
+
+## Contains
+- Entity models (Computer, Session, AdminUser, AppSetting)
+- Database context (CafeContext) using Entity Framework Core
+- Shared enums and helpers
+- Security utilities (password hashing, validation)
+
+## Why it exists
+Keeping all database models in one place ensures:
+- consistent schema across server and client
+- fewer breaking changes
+- easier migration to the future Awaken platform
+
