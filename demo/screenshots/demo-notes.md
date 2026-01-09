@@ -21,4 +21,4 @@ may contact the project lead directly.
 Popol Y. Elonda  
 Email: Popolelonda@gmail.com or pelonda@gmail.com
 
-demo/screenshots/cleint_lock_screen.png
+
