@@ -1,0 +1,144 @@
+﻿<Window x:Class="GEC.Server.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Awaken - Server"
+        Height="615" Width="967"
+        WindowStartupLocation="CenterScreen"
+        Background="{StaticResource AwakenBgBrush}">
+
+	<Grid Margin="18">
+
+		<!-- GLASS CARD -->
+		<Border Style="{StaticResource AwakenGlassCard}">
+			<Grid>
+				<Grid.RowDefinitions>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="*"/>
+					<RowDefinition Height="Auto"/>
+				</Grid.RowDefinitions>
+
+				<!-- HEADER -->
+				<DockPanel Grid.Row="0" LastChildFill="True" Margin="0,0,0,14">
+
+					<!-- Logo + Title -->
+					<StackPanel Orientation="Horizontal" DockPanel.Dock="Left" VerticalAlignment="Center">
+						<!-- Optional: remove Image if you don’t want it -->
+						<Image Height="40"
+                               Stretch="Uniform"
+                               Margin="0,0,12,0"
+                               Source="pack://application:,,,/Assets/awaken-logo.png"/>
+
+						<StackPanel>
+							<TextBlock Text="Awaken"
+                                       FontSize="22"
+                                       FontWeight="Bold"
+                                       Foreground="{StaticResource AwakenTextBrush}"/>
+							<TextBlock Text="Admin Control Panel"
+                                       FontSize="12"
+                                       Foreground="{StaticResource AwakenTextDimBrush}"/>
+						</StackPanel>
+					</StackPanel>
+
+					<!-- Search (right) -->
+					<StackPanel Orientation="Horizontal" DockPanel.Dock="Right" VerticalAlignment="Center">
+
+						<!-- TextBox styled inline (no missing AwakenTextBox key) -->
+						<TextBox x:Name="SearchBox"
+                                 Width="210"
+                                 Margin="0,0,10,0"
+                                 Height="32"
+                                 Padding="10,6"
+                                 Foreground="{StaticResource AwakenTextBrush}"
+                                 Background="#33111827"
+                                 BorderBrush="#33FFFFFF"
+                                 BorderThickness="1"/>
+
+						<Button Content="Search"
+                                Width="90"
+                                Margin="0,0,8,0"
+                                Click="Search_Click"
+                                Style="{StaticResource AwakenPrimaryButton}"/>
+
+						<Button Content="Clear"
+                                Width="90"
+                                Margin="0,0,8,0"
+                                Click="ClearSearch_Click"
+                                Style="{StaticResource AwakenPrimaryButton}"/>
+
+						<Button Content="Refresh"
+                                Width="90"
+                                Click="Refresh_Click"
+                                Style="{StaticResource AwakenPrimaryButton}"/>
+					</StackPanel>
+				</DockPanel>
+
+				<!-- GRID -->
+				<DataGrid x:Name="ComputersGrid"
+                          Grid.Row="1"
+                          AutoGenerateColumns="False"
+                          IsReadOnly="True"
+                          SelectionMode="Single"
+                          Style="{StaticResource AwakenDataGrid}"
+                          ColumnHeaderStyle="{StaticResource AwakenDataGridColumnHeader}"
+                          CellStyle="{StaticResource AwakenDataGridCell}"
+                          RowStyle="{StaticResource AwakenDataGridRow}">
+
+					<DataGrid.Columns>
+						<DataGridTextColumn Header="ID" Binding="{Binding Id}" Width="70"/>
+						<DataGridTextColumn Header="Name" Binding="{Binding Name}" Width="200"/>
+						<DataGridTextColumn Header="Status" Binding="{Binding Status}" Width="150"/>
+
+						<DataGridTemplateColumn Header="Remaining" Width="240">
+							<DataGridTemplateColumn.CellTemplate>
+								<DataTemplate>
+									<StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+										<Ellipse Width="10" Height="10"
+                                                 Margin="0,0,8,0"
+                                                 Fill="{Binding RemainingBrush}"/>
+										<TextBlock Text="{Binding RemainingTime}"
+                                                   Foreground="{StaticResource AwakenTextBrush}"
+                                                   VerticalAlignment="Center"/>
+									</StackPanel>
+								</DataTemplate>
+							</DataGridTemplateColumn.CellTemplate>
+						</DataGridTemplateColumn>
+
+						<DataGridTextColumn Header="Last PIN" Binding="{Binding LastPin}" Width="180"/>
+					</DataGrid.Columns>
+				</DataGrid>
+
+				<!-- FOOTER BUTTONS -->
+				<StackPanel Grid.Row="2"
+                            Orientation="Horizontal"
+                            HorizontalAlignment="Right"
+                            Margin="0,14,0,0">
+
+					<Button Content="Welcome Message"
+                            Width="150"
+                            Margin="6,0"
+                            Click="WelcomeMessage_Click"
+                            Style="{StaticResource AwakenPrimaryButton}"/>
+
+					<Button Content="New Session"
+                            Width="120"
+                            Margin="6,0"
+                            Click="NewSession_Click"
+                            Style="{StaticResource AwakenPrimaryButton}"/>
+
+					<Button Content="End Session"
+                            Width="120"
+                            Margin="6,0"
+                            Click="EndSession_Click"
+                            Style="{StaticResource AwakenPrimaryButton}"/>
+
+					<Button Content="View Sessions"
+                            Width="120"
+                            Margin="6,0"
+                            Click="ViewSessions_Click"
+                            Style="{StaticResource AwakenPrimaryButton}"/>
+				</StackPanel>
+
+			</Grid>
+		</Border>
+	</Grid>
+</Window>
