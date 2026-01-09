@@ -1,0 +1,172 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+	<!-- =========================
+         AWAKEN BRAND PALETTE
+         ========================= -->
+	<Color x:Key="AwakenNavy">#0B0B2A</Color>
+	<Color x:Key="AwakenSurface">#14143A</Color>
+
+	<Color x:Key="AwakenCyan">#25D6FF</Color>
+	<Color x:Key="AwakenBlue">#2B6CFF</Color>
+	<Color x:Key="AwakenPurple">#7A3CFF</Color>
+
+	<Color x:Key="AwakenText">#EAF2FF</Color>
+	<Color x:Key="AwakenTextMuted">#A9B7D6</Color>
+	<Color x:Key="AwakenBorder">#2A2F5A</Color>
+
+	<!-- Brushes -->
+	<SolidColorBrush x:Key="AwakenBackgroundBrush" Color="{StaticResource AwakenNavy}"/>
+	<SolidColorBrush x:Key="AwakenSurfaceBrush" Color="{StaticResource AwakenSurface}"/>
+
+	<SolidColorBrush x:Key="AwakenTextBrush" Color="{StaticResource AwakenText}"/>
+	<SolidColorBrush x:Key="AwakenTextMutedBrush" Color="{StaticResource AwakenTextMuted}"/>
+	<SolidColorBrush x:Key="AwakenBorderBrush" Color="{StaticResource AwakenBorder}"/>
+
+	<SolidColorBrush x:Key="AwakenOkBrush" Color="#13B86A"/>
+	<SolidColorBrush x:Key="AwakenWarnBrush" Color="#FFB020"/>
+	<SolidColorBrush x:Key="AwakenDangerBrush" Color="#FF3B3B"/>
+
+	<!-- =========================
+         GLOBAL TEXT DEFAULTS
+         ========================= -->
+	<Style TargetType="TextBlock">
+		<Setter Property="Foreground" Value="{StaticResource AwakenTextBrush}"/>
+	</Style>
+
+	<!-- =========================
+         GLASS CARD
+         ========================= -->
+	<Style x:Key="AwakenGlassCard" TargetType="Border">
+		<Setter Property="CornerRadius" Value="22"/>
+		<Setter Property="Padding" Value="16"/>
+		<Setter Property="BorderThickness" Value="1"/>
+		<Setter Property="BorderBrush" Value="#55FFFFFF"/>
+		<Setter Property="Background" Value="#1AFFFFFF"/>
+		<Setter Property="SnapsToDevicePixels" Value="True"/>
+		<Setter Property="Effect">
+			<Setter.Value>
+				<DropShadowEffect BlurRadius="26" ShadowDepth="0" Opacity="0.35"/>
+			</Setter.Value>
+		</Setter>
+	</Style>
+
+	<!-- =========================
+         PRIMARY BUTTON (Awaken gradient)
+         ========================= -->
+	<Style x:Key="AwakenPrimaryButton" TargetType="Button">
+		<Setter Property="Foreground" Value="White"/>
+		<Setter Property="FontWeight" Value="SemiBold"/>
+		<Setter Property="Padding" Value="16,10"/>
+		<Setter Property="BorderThickness" Value="0"/>
+		<Setter Property="Cursor" Value="Hand"/>
+		<Setter Property="Template">
+			<Setter.Value>
+				<ControlTemplate TargetType="Button">
+					<Border x:Name="Root" CornerRadius="16" SnapsToDevicePixels="True">
+						<Border.Background>
+							<LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+								<GradientStop Color="{StaticResource AwakenCyan}" Offset="0"/>
+								<GradientStop Color="{StaticResource AwakenBlue}" Offset="0.55"/>
+								<GradientStop Color="{StaticResource AwakenPurple}" Offset="1"/>
+							</LinearGradientBrush>
+						</Border.Background>
+
+						<ContentPresenter HorizontalAlignment="Center"
+                                          VerticalAlignment="Center"/>
+					</Border>
+
+					<ControlTemplate.Triggers>
+						<Trigger Property="IsMouseOver" Value="True">
+							<Setter TargetName="Root" Property="Opacity" Value="0.92"/>
+						</Trigger>
+						<Trigger Property="IsPressed" Value="True">
+							<Setter TargetName="Root" Property="Opacity" Value="0.85"/>
+						</Trigger>
+						<Trigger Property="IsEnabled" Value="False">
+							<Setter TargetName="Root" Property="Opacity" Value="0.45"/>
+						</Trigger>
+					</ControlTemplate.Triggers>
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+	</Style>
+
+	<!-- =========================
+         TEXTBOX
+         ========================= -->
+	<Style x:Key="AwakenTextBox" TargetType="TextBox">
+		<Setter Property="Height" Value="30"/>
+		<Setter Property="Padding" Value="10,4"/>
+		<Setter Property="Foreground" Value="{StaticResource AwakenTextBrush}"/>
+		<Setter Property="Background" Value="#14FFFFFF"/>
+		<Setter Property="BorderBrush" Value="{StaticResource AwakenBorderBrush}"/>
+		<Setter Property="BorderThickness" Value="1"/>
+		<Setter Property="CaretBrush" Value="{StaticResource AwakenTextBrush}"/>
+		<Setter Property="SelectionBrush" Value="#5525D6FF"/>
+	</Style>
+
+	<!-- =========================
+         COMBOBOX (matches TextBox)
+         ========================= -->
+	<Style x:Key="AwakenComboBox" TargetType="ComboBox">
+		<Setter Property="Height" Value="30"/>
+		<Setter Property="Padding" Value="8,3"/>
+		<Setter Property="Foreground" Value="{StaticResource AwakenTextBrush}"/>
+		<Setter Property="Background" Value="#14FFFFFF"/>
+		<Setter Property="BorderBrush" Value="{StaticResource AwakenBorderBrush}"/>
+		<Setter Property="BorderThickness" Value="1"/>
+	</Style>
+
+	<!-- =========================
+         DATAGRID (dark glass)
+         ========================= -->
+	<Style x:Key="AwakenDataGrid" TargetType="DataGrid">
+		<Setter Property="Background" Value="#12FFFFFF"/>
+		<Setter Property="Foreground" Value="{StaticResource AwakenTextBrush}"/>
+		<Setter Property="BorderBrush" Value="{StaticResource AwakenBorderBrush}"/>
+		<Setter Property="BorderThickness" Value="1"/>
+		<Setter Property="GridLinesVisibility" Value="None"/>
+		<Setter Property="RowHeaderWidth" Value="0"/>
+		<Setter Property="AlternatingRowBackground" Value="#0EFFFFFF"/>
+		<Setter Property="SelectionMode" Value="Single"/>
+		<Setter Property="SelectionUnit" Value="FullRow"/>
+		<Setter Property="HeadersVisibility" Value="Column"/>
+	</Style>
+
+	<!-- Column headers (global) -->
+	<Style TargetType="DataGridColumnHeader">
+		<Setter Property="Background" Value="#18FFFFFF"/>
+		<Setter Property="Foreground" Value="{StaticResource AwakenTextBrush}"/>
+		<Setter Property="FontWeight" Value="SemiBold"/>
+		<Setter Property="BorderBrush" Value="{StaticResource AwakenBorderBrush}"/>
+		<Setter Property="BorderThickness" Value="0,0,0,1"/>
+		<Setter Property="Padding" Value="10,8"/>
+		<Setter Property="HorizontalContentAlignment" Value="Left"/>
+	</Style>
+
+	<!-- Cells (global) -->
+	<Style TargetType="DataGridCell">
+		<Setter Property="BorderThickness" Value="0"/>
+		<Setter Property="Padding" Value="10,6"/>
+		<Style.Triggers>
+			<Trigger Property="IsSelected" Value="True">
+				<Setter Property="Background" Value="#3325D6FF"/>
+				<Setter Property="Foreground" Value="{StaticResource AwakenTextBrush}"/>
+			</Trigger>
+		</Style.Triggers>
+	</Style>
+
+	<!-- Rows (global) -->
+	<Style TargetType="DataGridRow">
+		<Style.Triggers>
+			<Trigger Property="IsMouseOver" Value="True">
+				<Setter Property="Background" Value="#1DFFFFFF"/>
+			</Trigger>
+			<Trigger Property="IsSelected" Value="True">
+				<Setter Property="Background" Value="#252B6CFF"/>
+			</Trigger>
+		</Style.Triggers>
+	</Style>
+
+</ResourceDictionary>

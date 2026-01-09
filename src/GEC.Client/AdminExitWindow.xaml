@@ -1,0 +1,69 @@
+﻿<Window x:Class="GEC.Client.AdminExitWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Administrator Exit"
+        Height="241" Width="381"
+        WindowStartupLocation="CenterOwner"
+        ResizeMode="NoResize"
+        Background="{StaticResource AwakenBackgroundBrush}">
+
+	<Grid Margin="18">
+		<Border Style="{StaticResource AwakenGlassCard}">
+			<Grid Margin="12">
+				<Grid.RowDefinitions>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+				</Grid.RowDefinitions>
+
+				<!-- Header -->
+				<StackPanel Grid.Row="0"
+                            Orientation="Horizontal"
+                            VerticalAlignment="Center"
+                            Margin="0,0,0,12">
+
+					<Image Height="28"
+                           Stretch="Uniform"
+                           Margin="0,0,10,0"
+                           Source="pack://application:,,,/Assets/awaken-logo.png"/>
+
+					<TextBlock Text="Administrator access"
+                               FontSize="16"
+                               FontWeight="SemiBold"
+                               Foreground="{StaticResource AwakenTextBrush}"/>
+				</StackPanel>
+
+				<!-- Password -->
+				<PasswordBox x:Name="AdminPasswordBox"
+                             Grid.Row="1"
+                             Height="34"
+                             FontSize="16"
+                             Padding="10,6"
+                             Background="#14FFFFFF"
+                             Foreground="{StaticResource AwakenTextBrush}"
+                             BorderBrush="{StaticResource AwakenBorderBrush}"
+                             BorderThickness="1"
+                             Margin="0,0,0,14"/>
+
+				<!-- Buttons -->
+				<StackPanel Grid.Row="2"
+                            Orientation="Horizontal"
+                            HorizontalAlignment="Right">
+
+					<Button Content="Cancel"
+                            Width="100"
+                            Margin="0,0,10,0"
+                            Click="Cancel_Click"
+                            Style="{StaticResource AwakenPrimaryButton}"/>
+
+					<Button Content="Exit Client"
+                            Width="110"
+                            IsDefault="True"
+                            Click="Exit_Click"
+                            Style="{StaticResource AwakenPrimaryButton}"/>
+				</StackPanel>
+
+			</Grid>
+		</Border>
+	</Grid>
+</Window>
